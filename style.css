@@ -4,6 +4,10 @@
     font-family: "Jost", sans-serif;
 }
 
+body {
+    background-color: #F8F8F8;
+}
+
 div#content {
     display: flex;
     justify-content: center;
@@ -26,7 +30,7 @@ div.nav {
 }
 
 div.container {
-    background-color: #FCFCFC;
+    background-color: #FFFFFF;
     margin: 40px;
     filter: drop-shadow(4px 8px 8px rgba(0, 0, 0, 0.1));
     border-radius: 10px;
@@ -66,7 +70,7 @@ a:hover {
 div.img-container {
     overflow: hidden;
     border-radius: 10px 10px 0 0;
-    background-color: #F8F8F8;
+    background-color: #F0F0F0;
     text-align: center;
 }
 
