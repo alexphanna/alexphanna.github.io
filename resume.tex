@@ -1,0 +1,225 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Alex Hanna} \\ \vspace{1pt}
+    \small 267-832-7342 $|$ \href{mailto:alex.hanna@rutgers.edu}{\underline{alex.hanna@rutgers.edu}} $|$ 
+    \href{https://linkedin.com/in/alex-hanna-265063325}{\underline{linkedin.com/in/alex-hanna-265063325}} $|$
+    \href{https://github.com/alexphanna}{\underline{github.com/alexphanna}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University-New Brunswick}{Piscataway, NJ}
+      {Bachelor of Sciences in Computer Science}{Expected May 2028}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Data Structures, Introduction to Discrete Structures I, Computer Architecture}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Council Rock High School North}{Newtown, PA}
+      {High School Diploma}{Sep. 2020 -- June 2024}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: AP Computer Science A, AP Computer Science Principles, AP Statistics}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Stock Boy}{Summers, 2022 -- 2024}
+      {Russo's Market}{North Wildwood, NJ}
+      \resumeItemListStart
+        \resumeItem{Ensured optimal store presentation by meticulously stocking shelves and fridges, enhancing product visibility}
+        \resumeItem{Performed various janitorial tasks to maintain a clean and safe environment in both the kitchen and store}
+        \resumeItem{Collaborated with team members to streamline stocking processes, increasing efficiency during busy periods}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{RU Eating App} $|$ \emph{Swift, SwiftUI}}{Sep. 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Created an iOS app that empowers Rutgers Students to view dining hall menus, enhancing their dining experience}
+            \resumeItem{Utilized MVVM architecture for clean, maintainable code, ensuring efficient app performance and user experience}
+            \resumeItem{Implemented SwiftSoup to parse and format web-scraped menu data, presenting it in a SwiftUI user interface}
+            \resumeItem{Achieved over 450 downloads from the App Store, receiving positive feedback for its functionality and ease of use}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Frontier Game} $|$ \emph{JavaScript, HTML, CSS, Node.js}}{April 2024 -- Sep. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web game with a Node.js server backend and a JavaScript website frontend}
+            \resumeItem{Implemented a four-player multiplayer system using the WebSocket protocol for client-to-server communication}
+            \resumeItem{Designed and refined engaging gameplay inspired by a board game with an SVG-based user interface}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Blackjack Game} $|$ \emph{JavaScript, HTML, CSS}}{March 2024 -- April 2024}
+          \resumeItemListStart
+            \resumeItem{Designed and developed a single-player blackjack web game that provides an engaging experience for users}
+            \resumeItem{Implemented blackjack and betting mechanics with a minimal user interface for a smooth gameplay experience}
+            \resumeItem{Conducted peer testing to refine gameplay mechanics and ensure a polished final product}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Workouts App} $|$ \emph{Swift, SwiftUI}}{Sep. 2023 -- March 2023}
+          \resumeItemListStart
+            \resumeItem{Created an iOS app that enables users to log gym workouts, helping them monitor fitness progress effectively}
+            \resumeItem{Utilized a native SwiftUI interface for a seamless and intuitive user experience, ensuring easy navigation}
+            \resumeItem{Implemented CoreData to persist workout data, allowing users to log detailed information such as sets and reps}
+            \resumeItem{Incorporated features for tracking progress over time, enhancing user motivation and engagement}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Chess Game} $|$ \emph{C\#}}{Jan. 2023 -- Oct. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a two-player console application for chess players, allowing them to compete in a classic strategy game}
+            \resumeItem{Implemented an interactive chessboard that displays legal moves for each piece, enhancing player decision-making}
+            \resumeItem{Utilized object-oriented programming principles to structure the game logic and ensure clean, maintainable code}
+            \resumeItem{Conducted testing to refine gameplay mechanics and improve user experience based on player feedback}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C\#, Java, Python, C, JavaScript, HTML/CSS, Swift, Nix} \\
+     \textbf{Frameworks}{: Node.js, SwiftUI, Java Swing, Windows Forms} \\
+     \textbf{Developer Tools}{: Git, Linux, VS Code, Visual Studio} \\
+     \textbf{Libraries}{: CoreData, SwiftData, SwiftSoup, ws}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
