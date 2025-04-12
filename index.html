@@ -1,22 +1,39 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Alex Hanna</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
-</head>
-<body>
-    <div class="nav"> 
-        <h1><b><i>alex hanna</i></b></h1>
-        <div id="nav-links"> 
-            <a href="https://github.com/alexphanna">github</a>
-            <a href="https://www.linkedin.com/in/alex-hanna-265063325/">linkedin</a>
-            <a href="resume.pdf">resume</a>
-        </div>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://indestructibletype.com/fonts/Jost.css"
+      type="text/css"
+      charset="utf-8"
+    />
+  </head>
+  <body>
+    <div class="nav">
+      <h1>alex hanna</h1>
+      <div id="nav-links">
+        <a href="https://github.com/alexphanna">github</a>
+        <a href="https://www.linkedin.com/in/alex-hanna-265063325/">linkedin</a>
+        <a href="resume.pdf">resume</a>
+      </div>
     </div>
 
-    <div id="disc-container"></div>
+    <div style="display: flex">
+      <div id="disc-container"></div>
+      <div id="project-container">
+        <div id="project-title-container">
+          <div style="display: flex; align-items: center">
+              <h1 id="project-title"></h1>
+            <a href="https://github.com/"><i class="fab fa-github"></i></a>
+          </div>
+          <h4 id="project-subtitle"></h4>
+        </div>
+        <div id="project-image-container"></div>
+      </div>
+    </div>
 
-    <script src="script.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
