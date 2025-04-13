@@ -32,16 +32,14 @@ for (let i = 0; i < projects; i++) {
     const images = ["cd"];
     disc.style.backgroundImage =
         "url(images/" + images[Math.floor(Math.random() * images.length)] + ".png)";
-    const angle = Math.random() * 90 - 45;
-    disc.style.transform = "Rotate(" + angle + "deg)";
-    const discolor = Math.floor(Math.random() * 360);
-    disc.style.filter = "sepia(10%) hue-rotate(" + discolor + "deg)";
     disc.addEventListener("mouseenter", function () {
         disc.style.marginLeft = "-10vh";
+        disc.classList.add("spin");
         updateProject(i);
     });
     disc.addEventListener("mouseleave", function () {
         disc.style.marginLeft = "-20vh";
+        disc.classList.remove("spin");
     });
     disc.addEventListener("mousedown", function () {
         window.location.href = projectLinks[i];

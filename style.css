@@ -58,18 +58,38 @@ a:hover {
   color: #000000;
 }
 
+@keyframes spin {
+  0%   {
+    transform: Rotate(0deg);
+  }
+  100% {
+    transform: Rotate(360deg);
+  }
+}
+
 .disc {
   background-image: url(images/audio.png);
   background-size: cover;
   height: 40vh;
   width: 40vh;
+  margin-top: -30vh;
   margin-left: -20vh;
   border-radius: 50%;
   transform-origin: center;
+  transform: Rotate(0deg);
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: .5s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
 }
 
 div#disc-container {
   min-width: 30vh;
+  margin-top: 30vh;
   height: 90vh;
 }
 
